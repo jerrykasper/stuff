@@ -1,5 +1,5 @@
 Param (
-    [string]$Computername = $env:computername
+    [string[]]$Computername = $env:computername
 )
 
 Begin {
