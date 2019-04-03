@@ -52,6 +52,6 @@ Process {
     }
 }
 end {
-    $Result | Select-Object Time, $ET, User | Sort-Object Time -Descending | Export-Csv $OutputFileName
+    $Result | Select-Object Time, Computer, User, ET, Error | Sort-Object Time -Descending | Export-Csv $OutputFileName
     "Done."
 }
